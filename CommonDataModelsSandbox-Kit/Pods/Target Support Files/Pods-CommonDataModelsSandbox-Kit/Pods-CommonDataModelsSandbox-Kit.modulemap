@@ -1,0 +1,6 @@
+framework module Pods_CommonDataModelsSandbox_Kit {
+  umbrella header "Pods-CommonDataModelsSandbox-Kit-umbrella.h"
+
+  export *
+  module * { export * }
+}

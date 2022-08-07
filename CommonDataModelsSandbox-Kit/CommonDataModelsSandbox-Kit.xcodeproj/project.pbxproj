@@ -1,0 +1,932 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00596A745E06FE963C447549 /* Pods_CommonDataModelsSandbox_Kit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 321660A2439F0FD83D06B4FA /* Pods_CommonDataModelsSandbox_Kit.framework */; };
+		E85B5412289F977E00362990 /* CommonDataModelsSandbox_Kit.docc in Sources */ = {isa = PBXBuildFile; fileRef = E85B5411289F977E00362990 /* CommonDataModelsSandbox_Kit.docc */; };
+		E85B5413289F977E00362990 /* CommonDataModelsSandbox_Kit.h in Headers */ = {isa = PBXBuildFile; fileRef = E85B5410289F977E00362990 /* CommonDataModelsSandbox_Kit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E85B548E289F97A300362990 /* ErrorDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85B541A289F97A200362990 /* ErrorDetail.swift */; };
+		E85B548F289F97A300362990 /* TapSDKUnknownError.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85B541B289F97A200362990 /* TapSDKUnknownError.swift */; };
+		E85B5490289F97A300362990 /* SharedCommonDataModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85B541C289F97A200362990 /* SharedCommonDataModels.swift */; };
+		E85B5491289F97A300362990 /* TapCommonConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85B541E289F97A200362990 /* TapCommonConstants.swift */; };
+		E85B5492289F97A300362990 /* SourcePaymentType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85B5420289F97A200362990 /* SourcePaymentType.swift */; };
+		E85B5493289F97A300362990 /* AuthorizeActionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85B5421289F97A200362990 /* AuthorizeActionType.swift */; };
+		E85B5494289F97A300362990 /* URLStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85B5422289F97A200362990 /* URLStatus.swift */; };
+		E85B5495289F97A300362990 /* AmountMoficiationType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85B5423289F97A200362990 /* AmountMoficiationType.swift */; };
+		E85B5496289F97A300362990 /* SourceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85B5424289F97A200362990 /* SourceType.swift */; };
+		E85B5497289F97A300362990 /* SDKMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85B5425289F97A200362990 /* SDKMode.swift */; };
+		E85B5498289F97A300362990 /* SourceObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85B5426289F97A200362990 /* SourceObject.swift */; };
+		E85B5499289F97A300362990 /* TransactionMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85B5427289F97A200362990 /* TransactionMode.swift */; };
+		E85B549A289F97A300362990 /* TapNetworkPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85B5428289F97A200362990 /* TapNetworkPath.swift */; };
+		E85B549B289F97A300362990 /* AddressFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85B5429289F97A200362990 /* AddressFormat.swift */; };
+		E85B549C289F97A300362990 /* cardType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85B542A289F97A200362990 /* cardType.swift */; };
+		E85B549D289F97A300362990 /* CardVerificationStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85B542B289F97A200362990 /* CardVerificationStatus.swift */; };
+		E85B549E289F97A300362990 /* CardKitErrorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85B542C289F97A200362990 /* CardKitErrorType.swift */; };
+		E85B549F289F97A300362990 /* CardTypeEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85B542D289F97A200362990 /* CardTypeEnum.swift */; };
+		E85B54A0289F97A300362990 /* TapAmountedCurrencyFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85B542F289F97A200362990 /* TapAmountedCurrencyFormatter.swift */; };
+		E85B54A1289F97A300362990 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85B5430289F97A200362990 /* String.swift */; };
+		E85B54A2289F97A300362990 /* TapCurrencyCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85B5431289F97A200362990 /* TapCurrencyCode.swift */; };
+		E85B54A3289F97A300362990 /* TapCurrencyLocale.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85B5432289F97A200362990 /* TapCurrencyLocale.swift */; };
+		E85B54A4289F97A300362990 /* CurrencyFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85B5434289F97A200362990 /* CurrencyFormatter.swift */; };
+		E85B54A5289F97A300362990 /* TapPaymentType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85B5435289F97A200362990 /* TapPaymentType.swift */; };
+		E85B54A6289F97A300362990 /* TokenType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85B5436289F97A200362990 /* TokenType.swift */; };
+		E85B54A7289F97A300362990 /* TapCountryCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85B5437289F97A200362990 /* TapCountryCode.swift */; };
+		E85B54A8289F97A300362990 /* _ObjCMeasurement.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85B5439289F97A200362990 /* _ObjCMeasurement.swift */; };
+		E85B54A9289F97A300362990 /* Power.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85B543A289F97A200362990 /* Power.swift */; };
+		E85B54AA289F97A300362990 /* Length.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85B543B289F97A200362990 /* Length.swift */; };
+		E85B54AB289F97A300362990 /* Measurement.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85B543C289F97A200362990 /* Measurement.swift */; };
+		E85B54AC289F97A300362990 /* ElectricCharge.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85B543D289F97A200362990 /* ElectricCharge.swift */; };
+		E85B54AD289F97A300362990 /* Energy.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85B543E289F97A200362990 /* Energy.swift */; };
+		E85B54AE289F97A300362990 /* Area.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85B543F289F97A200362990 /* Area.swift */; };
+		E85B54AF289F97A300362990 /* Mass.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85B5440289F97A200362990 /* Mass.swift */; };
+		E85B54B0289F97A300362990 /* Volume.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85B5441289F97A200362990 /* Volume.swift */; };
+		E85B54B1289F97A300362990 /* ElectricCurrent.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85B5442289F97A200362990 /* ElectricCurrent.swift */; };
+		E85B54B2289F97A300362990 /* Duration.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85B5443289F97A200362990 /* Duration.swift */; };
+		E85B54B3289F97A300362990 /* SourceChannel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85B5444289F97A200362990 /* SourceChannel.swift */; };
+		E85B54B4289F97A300362990 /* AddressType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85B5445289F97A200362990 /* AddressType.swift */; };
+		E85B54B5289F97A300362990 /* TapSDKKnownError.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85B5446289F97A200362990 /* TapSDKKnownError.swift */; };
+		E85B54B6289F97A300362990 /* Crypter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85B5448289F97A200362990 /* Crypter.swift */; };
+		E85B54B7289F97A300362990 /* ErrorUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85B5449289F97A200362990 /* ErrorUtils.swift */; };
+		E85B54B8289F97A300362990 /* KeychainManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85B544A289F97A200362990 /* KeychainManager.swift */; };
+		E85B54B9289F97A300362990 /* RSAUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85B544B289F97A200362990 /* RSAUtils.swift */; };
+		E85B54BA289F97A300362990 /* SourceRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85B544D289F97A200362990 /* SourceRequest.swift */; };
+		E85B54BB289F97A300362990 /* TapCountry.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85B544E289F97A200362990 /* TapCountry.swift */; };
+		E85B54BC289F97A300362990 /* Source.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85B544F289F97A200362990 /* Source.swift */; };
+		E85B54BD289F97A300362990 /* TapMetaData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85B5450289F97A200362990 /* TapMetaData.swift */; };
+		E85B54BE289F97A300362990 /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85B5451289F97A200362990 /* Address.swift */; };
+		E85B54BF289F97A300362990 /* QuantityModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85B5452289F97A200362990 /* QuantityModel.swift */; };
+		E85B54C0289F97A300362990 /* TransactionExpiry.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85B5453289F97A200362990 /* TransactionExpiry.swift */; };
+		E85B54C1289F97A300362990 /* TapCustomer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85B5454289F97A200362990 /* TapCustomer.swift */; };
+		E85B54C2289F97A300362990 /* InternalSDKSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85B5455289F97A200362990 /* InternalSDKSettings.swift */; };
+		E85B54C3289F97A300362990 /* Permissions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85B5456289F97A200362990 /* Permissions.swift */; };
+		E85B54C4289F97A300362990 /* ItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85B5457289F97A200362990 /* ItemModel.swift */; };
+		E85B54C5289F97A300362990 /* AuthenticationRequirer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85B5458289F97A200362990 /* AuthenticationRequirer.swift */; };
+		E85B54C6289F97A300362990 /* TapPhone.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85B5459289F97A200362990 /* TapPhone.swift */; };
+		E85B54C7289F97A300362990 /* TransactionOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85B545A289F97A200362990 /* TransactionOrder.swift */; };
+		E85B54C8289F97A300362990 /* TapCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85B545B289F97A200362990 /* TapCard.swift */; };
+		E85B54C9289F97A300362990 /* CreateTokenCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85B545C289F97A200362990 /* CreateTokenCard.swift */; };
+		E85B54CA289F97A300362990 /* MerchantModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85B545D289F97A200362990 /* MerchantModel.swift */; };
+		E85B54CB289F97A300362990 /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85B545E289F97A200362990 /* Country.swift */; };
+		E85B54CC289F97A300362990 /* TokenizedCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85B545F289F97A200362990 /* TokenizedCard.swift */; };
+		E85B54CD289F97A300362990 /* AmountModificatorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85B5460289F97A200362990 /* AmountModificatorModel.swift */; };
+		E85B54CE289F97A300362990 /* TransactionDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85B5461289F97A200362990 /* TransactionDetails.swift */; };
+		E85B54CF289F97A300362990 /* AuthenticationStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85B5462289F97A200362990 /* AuthenticationStatus.swift */; };
+		E85B54D0289F97A300362990 /* TrackingURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85B5463289F97A200362990 /* TrackingURL.swift */; };
+		E85B54D1289F97A300362990 /* ApiErrorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85B5464289F97A200362990 /* ApiErrorModel.swift */; };
+		E85B54D2289F97A300362990 /* CardFieldsValidity.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85B5465289F97A200362990 /* CardFieldsValidity.swift */; };
+		E85B54D3289F97A300362990 /* AuthenticationType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85B5466289F97A200362990 /* AuthenticationType.swift */; };
+		E85B54D4289F97A300362990 /* Token.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85B5467289F97A200362990 /* Token.swift */; };
+		E85B54D5289F97A300362990 /* SavedCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85B5468289F97A200362990 /* SavedCard.swift */; };
+		E85B54D6289F97A300362990 /* TapPaymentOptionsReponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85B546C289F97A200362990 /* TapPaymentOptionsReponseModel.swift */; };
+		E85B54D7289F97A300362990 /* SDKSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85B546D289F97A200362990 /* SDKSettings.swift */; };
+		E85B54D8289F97A300362990 /* TapPaymentOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85B546E289F97A200362990 /* TapPaymentOption.swift */; };
+		E85B54D9289F97A300362990 /* CardScheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85B5470289F97A200362990 /* CardScheme.swift */; };
+		E85B54DA289F97A300362990 /* TapBinResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85B5471289F97A200362990 /* TapBinResponseModel.swift */; };
+		E85B54DB289F97A300362990 /* Gateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85B5473289F97A300362990 /* Gateway.swift */; };
+		E85B54DC289F97A300362990 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85B5474289F97A300362990 /* Config.swift */; };
+		E85B54DD289F97A300362990 /* TapConfigRequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85B5475289F97A300362990 /* TapConfigRequestModel.swift */; };
+		E85B54DE289F97A300362990 /* TapConfigResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85B5476289F97A300362990 /* TapConfigResponseModel.swift */; };
+		E85B54DF289F97A300362990 /* TapCreateCardVerificationRequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85B5478289F97A300362990 /* TapCreateCardVerificationRequestModel.swift */; };
+		E85B54E0289F97A300362990 /* TapAuthenticationRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85B5479289F97A300362990 /* TapAuthenticationRequest.swift */; };
+		E85B54E1289F97A300362990 /* TapCreateCardVerificationResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85B547A289F97A300362990 /* TapCreateCardVerificationResponseModel.swift */; };
+		E85B54E2289F97A300362990 /* TapCreateTokenRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85B547C289F97A300362990 /* TapCreateTokenRequest.swift */; };
+		E85B54E3289F97A300362990 /* TapCreateTokenWithCardDataRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85B547D289F97A300362990 /* TapCreateTokenWithCardDataRequest.swift */; };
+		E85B54E4289F97A300362990 /* TapEmailAddress.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85B547E289F97A300362990 /* TapEmailAddress.swift */; };
+		E85B54E5289F97A300362990 /* AmountedCurrency.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85B547F289F97A300362990 /* AmountedCurrency.swift */; };
+		E85B54E6289F97A300362990 /* Tax.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85B5480289F97A300362990 /* Tax.swift */; };
+		E85B54E7289F97A300362990 /* SecretKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85B5481289F97A300362990 /* SecretKey.swift */; };
+		E85B54E8289F97A300362990 /* ExpirationDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85B5482289F97A300362990 /* ExpirationDate.swift */; };
+		E85B54E9289F97A300362990 /* Merchant.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85B5483289F97A300362990 /* Merchant.swift */; };
+		E85B54EA289F97A300362990 /* Shipping.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85B5484289F97A300362990 /* Shipping.swift */; };
+		E85B54EB289F97A300362990 /* ExtensionProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85B5485289F97A300362990 /* ExtensionProtocols.swift */; };
+		E85B54EC289F97A300362990 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85B5487289F97A300362990 /* APIError.swift */; };
+		E85B54ED289F97A300362990 /* ErrorCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85B5488289F97A300362990 /* ErrorCode.swift */; };
+		E85B54EE289F97A300362990 /* TapSDKErrorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85B5489289F97A300362990 /* TapSDKErrorType.swift */; };
+		E85B54EF289F97A300362990 /* TapSDKAPIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85B548A289F97A300362990 /* TapSDKAPIError.swift */; };
+		E85B54F0289F97A300362990 /* TapSDKError.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85B548B289F97A300362990 /* TapSDKError.swift */; };
+		E85B54F1289F97A300362990 /* DefaultTapLocalisation.json in Resources */ = {isa = PBXBuildFile; fileRef = E85B548D289F97A300362990 /* DefaultTapLocalisation.json */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		30188FBB1810C389C463C3A1 /* Pods-CommonDataModelsSandbox-Kit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CommonDataModelsSandbox-Kit.release.xcconfig"; path = "Target Support Files/Pods-CommonDataModelsSandbox-Kit/Pods-CommonDataModelsSandbox-Kit.release.xcconfig"; sourceTree = "<group>"; };
+		321660A2439F0FD83D06B4FA /* Pods_CommonDataModelsSandbox_Kit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CommonDataModelsSandbox_Kit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		737419F42A85CF208E3202DB /* Pods-CommonDataModelsSandbox-Kit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CommonDataModelsSandbox-Kit.debug.xcconfig"; path = "Target Support Files/Pods-CommonDataModelsSandbox-Kit/Pods-CommonDataModelsSandbox-Kit.debug.xcconfig"; sourceTree = "<group>"; };
+		E85B540D289F977E00362990 /* CommonDataModelsSandbox_Kit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CommonDataModelsSandbox_Kit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E85B5410289F977E00362990 /* CommonDataModelsSandbox_Kit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommonDataModelsSandbox_Kit.h; sourceTree = "<group>"; };
+		E85B5411289F977E00362990 /* CommonDataModelsSandbox_Kit.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = CommonDataModelsSandbox_Kit.docc; sourceTree = "<group>"; };
+		E85B541A289F97A200362990 /* ErrorDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorDetail.swift; sourceTree = "<group>"; };
+		E85B541B289F97A200362990 /* TapSDKUnknownError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TapSDKUnknownError.swift; sourceTree = "<group>"; };
+		E85B541C289F97A200362990 /* SharedCommonDataModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SharedCommonDataModels.swift; sourceTree = "<group>"; };
+		E85B541E289F97A200362990 /* TapCommonConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TapCommonConstants.swift; sourceTree = "<group>"; };
+		E85B5420289F97A200362990 /* SourcePaymentType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SourcePaymentType.swift; sourceTree = "<group>"; };
+		E85B5421289F97A200362990 /* AuthorizeActionType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthorizeActionType.swift; sourceTree = "<group>"; };
+		E85B5422289F97A200362990 /* URLStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLStatus.swift; sourceTree = "<group>"; };
+		E85B5423289F97A200362990 /* AmountMoficiationType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AmountMoficiationType.swift; sourceTree = "<group>"; };
+		E85B5424289F97A200362990 /* SourceType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SourceType.swift; sourceTree = "<group>"; };
+		E85B5425289F97A200362990 /* SDKMode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SDKMode.swift; sourceTree = "<group>"; };
+		E85B5426289F97A200362990 /* SourceObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SourceObject.swift; sourceTree = "<group>"; };
+		E85B5427289F97A200362990 /* TransactionMode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionMode.swift; sourceTree = "<group>"; };
+		E85B5428289F97A200362990 /* TapNetworkPath.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TapNetworkPath.swift; sourceTree = "<group>"; };
+		E85B5429289F97A200362990 /* AddressFormat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddressFormat.swift; sourceTree = "<group>"; };
+		E85B542A289F97A200362990 /* cardType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = cardType.swift; sourceTree = "<group>"; };
+		E85B542B289F97A200362990 /* CardVerificationStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardVerificationStatus.swift; sourceTree = "<group>"; };
+		E85B542C289F97A200362990 /* CardKitErrorType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardKitErrorType.swift; sourceTree = "<group>"; };
+		E85B542D289F97A200362990 /* CardTypeEnum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardTypeEnum.swift; sourceTree = "<group>"; };
+		E85B542F289F97A200362990 /* TapAmountedCurrencyFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TapAmountedCurrencyFormatter.swift; sourceTree = "<group>"; };
+		E85B5430289F97A200362990 /* String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		E85B5431289F97A200362990 /* TapCurrencyCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TapCurrencyCode.swift; sourceTree = "<group>"; };
+		E85B5432289F97A200362990 /* TapCurrencyLocale.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TapCurrencyLocale.swift; sourceTree = "<group>"; };
+		E85B5434289F97A200362990 /* CurrencyFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyFormatter.swift; sourceTree = "<group>"; };
+		E85B5435289F97A200362990 /* TapPaymentType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TapPaymentType.swift; sourceTree = "<group>"; };
+		E85B5436289F97A200362990 /* TokenType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TokenType.swift; sourceTree = "<group>"; };
+		E85B5437289F97A200362990 /* TapCountryCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TapCountryCode.swift; sourceTree = "<group>"; };
+		E85B5439289F97A200362990 /* _ObjCMeasurement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = _ObjCMeasurement.swift; sourceTree = "<group>"; };
+		E85B543A289F97A200362990 /* Power.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Power.swift; sourceTree = "<group>"; };
+		E85B543B289F97A200362990 /* Length.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Length.swift; sourceTree = "<group>"; };
+		E85B543C289F97A200362990 /* Measurement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Measurement.swift; sourceTree = "<group>"; };
+		E85B543D289F97A200362990 /* ElectricCharge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ElectricCharge.swift; sourceTree = "<group>"; };
+		E85B543E289F97A200362990 /* Energy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Energy.swift; sourceTree = "<group>"; };
+		E85B543F289F97A200362990 /* Area.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Area.swift; sourceTree = "<group>"; };
+		E85B5440289F97A200362990 /* Mass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mass.swift; sourceTree = "<group>"; };
+		E85B5441289F97A200362990 /* Volume.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Volume.swift; sourceTree = "<group>"; };
+		E85B5442289F97A200362990 /* ElectricCurrent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ElectricCurrent.swift; sourceTree = "<group>"; };
+		E85B5443289F97A200362990 /* Duration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Duration.swift; sourceTree = "<group>"; };
+		E85B5444289F97A200362990 /* SourceChannel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SourceChannel.swift; sourceTree = "<group>"; };
+		E85B5445289F97A200362990 /* AddressType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddressType.swift; sourceTree = "<group>"; };
+		E85B5446289F97A200362990 /* TapSDKKnownError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TapSDKKnownError.swift; sourceTree = "<group>"; };
+		E85B5448289F97A200362990 /* Crypter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Crypter.swift; sourceTree = "<group>"; };
+		E85B5449289F97A200362990 /* ErrorUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorUtils.swift; sourceTree = "<group>"; };
+		E85B544A289F97A200362990 /* KeychainManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainManager.swift; sourceTree = "<group>"; };
+		E85B544B289F97A200362990 /* RSAUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSAUtils.swift; sourceTree = "<group>"; };
+		E85B544D289F97A200362990 /* SourceRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SourceRequest.swift; sourceTree = "<group>"; };
+		E85B544E289F97A200362990 /* TapCountry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TapCountry.swift; sourceTree = "<group>"; };
+		E85B544F289F97A200362990 /* Source.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Source.swift; sourceTree = "<group>"; };
+		E85B5450289F97A200362990 /* TapMetaData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TapMetaData.swift; sourceTree = "<group>"; };
+		E85B5451289F97A200362990 /* Address.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Address.swift; sourceTree = "<group>"; };
+		E85B5452289F97A200362990 /* QuantityModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuantityModel.swift; sourceTree = "<group>"; };
+		E85B5453289F97A200362990 /* TransactionExpiry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionExpiry.swift; sourceTree = "<group>"; };
+		E85B5454289F97A200362990 /* TapCustomer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TapCustomer.swift; sourceTree = "<group>"; };
+		E85B5455289F97A200362990 /* InternalSDKSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InternalSDKSettings.swift; sourceTree = "<group>"; };
+		E85B5456289F97A200362990 /* Permissions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Permissions.swift; sourceTree = "<group>"; };
+		E85B5457289F97A200362990 /* ItemModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemModel.swift; sourceTree = "<group>"; };
+		E85B5458289F97A200362990 /* AuthenticationRequirer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationRequirer.swift; sourceTree = "<group>"; };
+		E85B5459289F97A200362990 /* TapPhone.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TapPhone.swift; sourceTree = "<group>"; };
+		E85B545A289F97A200362990 /* TransactionOrder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionOrder.swift; sourceTree = "<group>"; };
+		E85B545B289F97A200362990 /* TapCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TapCard.swift; sourceTree = "<group>"; };
+		E85B545C289F97A200362990 /* CreateTokenCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateTokenCard.swift; sourceTree = "<group>"; };
+		E85B545D289F97A200362990 /* MerchantModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MerchantModel.swift; sourceTree = "<group>"; };
+		E85B545E289F97A200362990 /* Country.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
+		E85B545F289F97A200362990 /* TokenizedCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TokenizedCard.swift; sourceTree = "<group>"; };
+		E85B5460289F97A200362990 /* AmountModificatorModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AmountModificatorModel.swift; sourceTree = "<group>"; };
+		E85B5461289F97A200362990 /* TransactionDetails.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionDetails.swift; sourceTree = "<group>"; };
+		E85B5462289F97A200362990 /* AuthenticationStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationStatus.swift; sourceTree = "<group>"; };
+		E85B5463289F97A200362990 /* TrackingURL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrackingURL.swift; sourceTree = "<group>"; };
+		E85B5464289F97A200362990 /* ApiErrorModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiErrorModel.swift; sourceTree = "<group>"; };
+		E85B5465289F97A200362990 /* CardFieldsValidity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardFieldsValidity.swift; sourceTree = "<group>"; };
+		E85B5466289F97A200362990 /* AuthenticationType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationType.swift; sourceTree = "<group>"; };
+		E85B5467289F97A200362990 /* Token.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Token.swift; sourceTree = "<group>"; };
+		E85B5468289F97A200362990 /* SavedCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SavedCard.swift; sourceTree = "<group>"; };
+		E85B546C289F97A200362990 /* TapPaymentOptionsReponseModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TapPaymentOptionsReponseModel.swift; sourceTree = "<group>"; };
+		E85B546D289F97A200362990 /* SDKSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SDKSettings.swift; sourceTree = "<group>"; };
+		E85B546E289F97A200362990 /* TapPaymentOption.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TapPaymentOption.swift; sourceTree = "<group>"; };
+		E85B5470289F97A200362990 /* CardScheme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardScheme.swift; sourceTree = "<group>"; };
+		E85B5471289F97A200362990 /* TapBinResponseModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TapBinResponseModel.swift; sourceTree = "<group>"; };
+		E85B5473289F97A300362990 /* Gateway.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Gateway.swift; sourceTree = "<group>"; };
+		E85B5474289F97A300362990 /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		E85B5475289F97A300362990 /* TapConfigRequestModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TapConfigRequestModel.swift; sourceTree = "<group>"; };
+		E85B5476289F97A300362990 /* TapConfigResponseModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TapConfigResponseModel.swift; sourceTree = "<group>"; };
+		E85B5478289F97A300362990 /* TapCreateCardVerificationRequestModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TapCreateCardVerificationRequestModel.swift; sourceTree = "<group>"; };
+		E85B5479289F97A300362990 /* TapAuthenticationRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TapAuthenticationRequest.swift; sourceTree = "<group>"; };
+		E85B547A289F97A300362990 /* TapCreateCardVerificationResponseModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TapCreateCardVerificationResponseModel.swift; sourceTree = "<group>"; };
+		E85B547C289F97A300362990 /* TapCreateTokenRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TapCreateTokenRequest.swift; sourceTree = "<group>"; };
+		E85B547D289F97A300362990 /* TapCreateTokenWithCardDataRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TapCreateTokenWithCardDataRequest.swift; sourceTree = "<group>"; };
+		E85B547E289F97A300362990 /* TapEmailAddress.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TapEmailAddress.swift; sourceTree = "<group>"; };
+		E85B547F289F97A300362990 /* AmountedCurrency.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AmountedCurrency.swift; sourceTree = "<group>"; };
+		E85B5480289F97A300362990 /* Tax.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tax.swift; sourceTree = "<group>"; };
+		E85B5481289F97A300362990 /* SecretKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecretKey.swift; sourceTree = "<group>"; };
+		E85B5482289F97A300362990 /* ExpirationDate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpirationDate.swift; sourceTree = "<group>"; };
+		E85B5483289F97A300362990 /* Merchant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Merchant.swift; sourceTree = "<group>"; };
+		E85B5484289F97A300362990 /* Shipping.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Shipping.swift; sourceTree = "<group>"; };
+		E85B5485289F97A300362990 /* ExtensionProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtensionProtocols.swift; sourceTree = "<group>"; };
+		E85B5487289F97A300362990 /* APIError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		E85B5488289F97A300362990 /* ErrorCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorCode.swift; sourceTree = "<group>"; };
+		E85B5489289F97A300362990 /* TapSDKErrorType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TapSDKErrorType.swift; sourceTree = "<group>"; };
+		E85B548A289F97A300362990 /* TapSDKAPIError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TapSDKAPIError.swift; sourceTree = "<group>"; };
+		E85B548B289F97A300362990 /* TapSDKError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TapSDKError.swift; sourceTree = "<group>"; };
+		E85B548D289F97A300362990 /* DefaultTapLocalisation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = DefaultTapLocalisation.json; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E85B540A289F977E00362990 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00596A745E06FE963C447549 /* Pods_CommonDataModelsSandbox_Kit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1A5AFFF62F6B043D128189B6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				737419F42A85CF208E3202DB /* Pods-CommonDataModelsSandbox-Kit.debug.xcconfig */,
+				30188FBB1810C389C463C3A1 /* Pods-CommonDataModelsSandbox-Kit.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		95A90594F0D2296F07FF0A79 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				321660A2439F0FD83D06B4FA /* Pods_CommonDataModelsSandbox_Kit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E85B5403289F977E00362990 = {
+			isa = PBXGroup;
+			children = (
+				E85B540F289F977E00362990 /* CommonDataModelsSandbox-Kit */,
+				E85B540E289F977E00362990 /* Products */,
+				1A5AFFF62F6B043D128189B6 /* Pods */,
+				95A90594F0D2296F07FF0A79 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E85B540E289F977E00362990 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E85B540D289F977E00362990 /* CommonDataModelsSandbox_Kit.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E85B540F289F977E00362990 /* CommonDataModelsSandbox-Kit */ = {
+			isa = PBXGroup;
+			children = (
+				E85B5419289F97A200362990 /* Core */,
+				E85B5410289F977E00362990 /* CommonDataModelsSandbox_Kit.h */,
+				E85B5411289F977E00362990 /* CommonDataModelsSandbox_Kit.docc */,
+			);
+			path = "CommonDataModelsSandbox-Kit";
+			sourceTree = "<group>";
+		};
+		E85B5419289F97A200362990 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				E85B541A289F97A200362990 /* ErrorDetail.swift */,
+				E85B541B289F97A200362990 /* TapSDKUnknownError.swift */,
+				E85B541C289F97A200362990 /* SharedCommonDataModels.swift */,
+				E85B541D289F97A200362990 /* Constants */,
+				E85B541F289F97A200362990 /* enums */,
+				E85B5446289F97A200362990 /* TapSDKKnownError.swift */,
+				E85B5447289F97A200362990 /* Utils */,
+				E85B544C289F97A200362990 /* models */,
+				E85B5486289F97A300362990 /* Errors */,
+				E85B548C289F97A300362990 /* assets */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		E85B541D289F97A200362990 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				E85B541E289F97A200362990 /* TapCommonConstants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		E85B541F289F97A200362990 /* enums */ = {
+			isa = PBXGroup;
+			children = (
+				E85B5420289F97A200362990 /* SourcePaymentType.swift */,
+				E85B5421289F97A200362990 /* AuthorizeActionType.swift */,
+				E85B5422289F97A200362990 /* URLStatus.swift */,
+				E85B5423289F97A200362990 /* AmountMoficiationType.swift */,
+				E85B5424289F97A200362990 /* SourceType.swift */,
+				E85B5425289F97A200362990 /* SDKMode.swift */,
+				E85B5426289F97A200362990 /* SourceObject.swift */,
+				E85B5427289F97A200362990 /* TransactionMode.swift */,
+				E85B5428289F97A200362990 /* TapNetworkPath.swift */,
+				E85B5429289F97A200362990 /* AddressFormat.swift */,
+				E85B542A289F97A200362990 /* cardType.swift */,
+				E85B542B289F97A200362990 /* CardVerificationStatus.swift */,
+				E85B542C289F97A200362990 /* CardKitErrorType.swift */,
+				E85B542D289F97A200362990 /* CardTypeEnum.swift */,
+				E85B542E289F97A200362990 /* TapCurrencyCode */,
+				E85B5435289F97A200362990 /* TapPaymentType.swift */,
+				E85B5436289F97A200362990 /* TokenType.swift */,
+				E85B5437289F97A200362990 /* TapCountryCode.swift */,
+				E85B5438289F97A200362990 /* Measurements */,
+				E85B5444289F97A200362990 /* SourceChannel.swift */,
+				E85B5445289F97A200362990 /* AddressType.swift */,
+			);
+			path = enums;
+			sourceTree = "<group>";
+		};
+		E85B542E289F97A200362990 /* TapCurrencyCode */ = {
+			isa = PBXGroup;
+			children = (
+				E85B542F289F97A200362990 /* TapAmountedCurrencyFormatter.swift */,
+				E85B5430289F97A200362990 /* String.swift */,
+				E85B5431289F97A200362990 /* TapCurrencyCode.swift */,
+				E85B5432289F97A200362990 /* TapCurrencyLocale.swift */,
+				E85B5433289F97A200362990 /* AmountedCurrencyFormatter */,
+			);
+			path = TapCurrencyCode;
+			sourceTree = "<group>";
+		};
+		E85B5433289F97A200362990 /* AmountedCurrencyFormatter */ = {
+			isa = PBXGroup;
+			children = (
+				E85B5434289F97A200362990 /* CurrencyFormatter.swift */,
+			);
+			path = AmountedCurrencyFormatter;
+			sourceTree = "<group>";
+		};
+		E85B5438289F97A200362990 /* Measurements */ = {
+			isa = PBXGroup;
+			children = (
+				E85B5439289F97A200362990 /* _ObjCMeasurement.swift */,
+				E85B543A289F97A200362990 /* Power.swift */,
+				E85B543B289F97A200362990 /* Length.swift */,
+				E85B543C289F97A200362990 /* Measurement.swift */,
+				E85B543D289F97A200362990 /* ElectricCharge.swift */,
+				E85B543E289F97A200362990 /* Energy.swift */,
+				E85B543F289F97A200362990 /* Area.swift */,
+				E85B5440289F97A200362990 /* Mass.swift */,
+				E85B5441289F97A200362990 /* Volume.swift */,
+				E85B5442289F97A200362990 /* ElectricCurrent.swift */,
+				E85B5443289F97A200362990 /* Duration.swift */,
+			);
+			path = Measurements;
+			sourceTree = "<group>";
+		};
+		E85B5447289F97A200362990 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				E85B5448289F97A200362990 /* Crypter.swift */,
+				E85B5449289F97A200362990 /* ErrorUtils.swift */,
+				E85B544A289F97A200362990 /* KeychainManager.swift */,
+				E85B544B289F97A200362990 /* RSAUtils.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		E85B544C289F97A200362990 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				E85B544D289F97A200362990 /* SourceRequest.swift */,
+				E85B544E289F97A200362990 /* TapCountry.swift */,
+				E85B544F289F97A200362990 /* Source.swift */,
+				E85B5450289F97A200362990 /* TapMetaData.swift */,
+				E85B5451289F97A200362990 /* Address.swift */,
+				E85B5452289F97A200362990 /* QuantityModel.swift */,
+				E85B5453289F97A200362990 /* TransactionExpiry.swift */,
+				E85B5454289F97A200362990 /* TapCustomer.swift */,
+				E85B5455289F97A200362990 /* InternalSDKSettings.swift */,
+				E85B5456289F97A200362990 /* Permissions.swift */,
+				E85B5457289F97A200362990 /* ItemModel.swift */,
+				E85B5458289F97A200362990 /* AuthenticationRequirer.swift */,
+				E85B5459289F97A200362990 /* TapPhone.swift */,
+				E85B545A289F97A200362990 /* TransactionOrder.swift */,
+				E85B545B289F97A200362990 /* TapCard.swift */,
+				E85B545C289F97A200362990 /* CreateTokenCard.swift */,
+				E85B545D289F97A200362990 /* MerchantModel.swift */,
+				E85B545E289F97A200362990 /* Country.swift */,
+				E85B545F289F97A200362990 /* TokenizedCard.swift */,
+				E85B5460289F97A200362990 /* AmountModificatorModel.swift */,
+				E85B5461289F97A200362990 /* TransactionDetails.swift */,
+				E85B5462289F97A200362990 /* AuthenticationStatus.swift */,
+				E85B5463289F97A200362990 /* TrackingURL.swift */,
+				E85B5464289F97A200362990 /* ApiErrorModel.swift */,
+				E85B5465289F97A200362990 /* CardFieldsValidity.swift */,
+				E85B5466289F97A200362990 /* AuthenticationType.swift */,
+				E85B5467289F97A200362990 /* Token.swift */,
+				E85B5468289F97A200362990 /* SavedCard.swift */,
+				E85B5469289F97A200362990 /* APiModels */,
+				E85B547E289F97A300362990 /* TapEmailAddress.swift */,
+				E85B547F289F97A300362990 /* AmountedCurrency.swift */,
+				E85B5480289F97A300362990 /* Tax.swift */,
+				E85B5481289F97A300362990 /* SecretKey.swift */,
+				E85B5482289F97A300362990 /* ExpirationDate.swift */,
+				E85B5483289F97A300362990 /* Merchant.swift */,
+				E85B5484289F97A300362990 /* Shipping.swift */,
+				E85B5485289F97A300362990 /* ExtensionProtocols.swift */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		E85B5469289F97A200362990 /* APiModels */ = {
+			isa = PBXGroup;
+			children = (
+				E85B546A289F97A200362990 /* Init */,
+				E85B546F289F97A200362990 /* TapBinRequest */,
+				E85B5472289F97A300362990 /* Config */,
+				E85B5477289F97A300362990 /* TapCardVerifyRequest */,
+				E85B547B289F97A300362990 /* TapTokenRequest */,
+			);
+			path = APiModels;
+			sourceTree = "<group>";
+		};
+		E85B546A289F97A200362990 /* Init */ = {
+			isa = PBXGroup;
+			children = (
+				E85B546B289F97A200362990 /* TapInitResponsdeModel */,
+			);
+			path = Init;
+			sourceTree = "<group>";
+		};
+		E85B546B289F97A200362990 /* TapInitResponsdeModel */ = {
+			isa = PBXGroup;
+			children = (
+				E85B546C289F97A200362990 /* TapPaymentOptionsReponseModel.swift */,
+				E85B546D289F97A200362990 /* SDKSettings.swift */,
+				E85B546E289F97A200362990 /* TapPaymentOption.swift */,
+			);
+			path = TapInitResponsdeModel;
+			sourceTree = "<group>";
+		};
+		E85B546F289F97A200362990 /* TapBinRequest */ = {
+			isa = PBXGroup;
+			children = (
+				E85B5470289F97A200362990 /* CardScheme.swift */,
+				E85B5471289F97A200362990 /* TapBinResponseModel.swift */,
+			);
+			path = TapBinRequest;
+			sourceTree = "<group>";
+		};
+		E85B5472289F97A300362990 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				E85B5473289F97A300362990 /* Gateway.swift */,
+				E85B5474289F97A300362990 /* Config.swift */,
+				E85B5475289F97A300362990 /* TapConfigRequestModel.swift */,
+				E85B5476289F97A300362990 /* TapConfigResponseModel.swift */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		E85B5477289F97A300362990 /* TapCardVerifyRequest */ = {
+			isa = PBXGroup;
+			children = (
+				E85B5478289F97A300362990 /* TapCreateCardVerificationRequestModel.swift */,
+				E85B5479289F97A300362990 /* TapAuthenticationRequest.swift */,
+				E85B547A289F97A300362990 /* TapCreateCardVerificationResponseModel.swift */,
+			);
+			path = TapCardVerifyRequest;
+			sourceTree = "<group>";
+		};
+		E85B547B289F97A300362990 /* TapTokenRequest */ = {
+			isa = PBXGroup;
+			children = (
+				E85B547C289F97A300362990 /* TapCreateTokenRequest.swift */,
+				E85B547D289F97A300362990 /* TapCreateTokenWithCardDataRequest.swift */,
+			);
+			path = TapTokenRequest;
+			sourceTree = "<group>";
+		};
+		E85B5486289F97A300362990 /* Errors */ = {
+			isa = PBXGroup;
+			children = (
+				E85B5487289F97A300362990 /* APIError.swift */,
+				E85B5488289F97A300362990 /* ErrorCode.swift */,
+				E85B5489289F97A300362990 /* TapSDKErrorType.swift */,
+				E85B548A289F97A300362990 /* TapSDKAPIError.swift */,
+				E85B548B289F97A300362990 /* TapSDKError.swift */,
+			);
+			path = Errors;
+			sourceTree = "<group>";
+		};
+		E85B548C289F97A300362990 /* assets */ = {
+			isa = PBXGroup;
+			children = (
+				E85B548D289F97A300362990 /* DefaultTapLocalisation.json */,
+			);
+			path = assets;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		E85B5408289F977E00362990 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E85B5413289F977E00362990 /* CommonDataModelsSandbox_Kit.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		E85B540C289F977E00362990 /* CommonDataModelsSandbox-Kit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E85B5416289F977E00362990 /* Build configuration list for PBXNativeTarget "CommonDataModelsSandbox-Kit" */;
+			buildPhases = (
+				1589BAEA579529F79257C98F /* [CP] Check Pods Manifest.lock */,
+				E85B5408289F977E00362990 /* Headers */,
+				E85B5409289F977E00362990 /* Sources */,
+				E85B540A289F977E00362990 /* Frameworks */,
+				E85B540B289F977E00362990 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "CommonDataModelsSandbox-Kit";
+			productName = "CommonDataModelsSandbox-Kit";
+			productReference = E85B540D289F977E00362990 /* CommonDataModelsSandbox_Kit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E85B5404289F977E00362990 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					E85B540C289F977E00362990 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+				};
+			};
+			buildConfigurationList = E85B5407289F977E00362990 /* Build configuration list for PBXProject "CommonDataModelsSandbox-Kit" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E85B5403289F977E00362990;
+			productRefGroup = E85B540E289F977E00362990 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E85B540C289F977E00362990 /* CommonDataModelsSandbox-Kit */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E85B540B289F977E00362990 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E85B54F1289F97A300362990 /* DefaultTapLocalisation.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1589BAEA579529F79257C98F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CommonDataModelsSandbox-Kit-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E85B5409289F977E00362990 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E85B54D6289F97A300362990 /* TapPaymentOptionsReponseModel.swift in Sources */,
+				E85B54D5289F97A300362990 /* SavedCard.swift in Sources */,
+				E85B54BB289F97A300362990 /* TapCountry.swift in Sources */,
+				E85B54D1289F97A300362990 /* ApiErrorModel.swift in Sources */,
+				E85B54A8289F97A300362990 /* _ObjCMeasurement.swift in Sources */,
+				E85B5493289F97A300362990 /* AuthorizeActionType.swift in Sources */,
+				E85B54A4289F97A300362990 /* CurrencyFormatter.swift in Sources */,
+				E85B54B0289F97A300362990 /* Volume.swift in Sources */,
+				E85B54C1289F97A300362990 /* TapCustomer.swift in Sources */,
+				E85B54EB289F97A300362990 /* ExtensionProtocols.swift in Sources */,
+				E85B54D3289F97A300362990 /* AuthenticationType.swift in Sources */,
+				E85B54B7289F97A300362990 /* ErrorUtils.swift in Sources */,
+				E85B54E7289F97A300362990 /* SecretKey.swift in Sources */,
+				E85B54A9289F97A300362990 /* Power.swift in Sources */,
+				E85B54E5289F97A300362990 /* AmountedCurrency.swift in Sources */,
+				E85B54EF289F97A300362990 /* TapSDKAPIError.swift in Sources */,
+				E85B54AC289F97A300362990 /* ElectricCharge.swift in Sources */,
+				E85B54F0289F97A300362990 /* TapSDKError.swift in Sources */,
+				E85B54ED289F97A300362990 /* ErrorCode.swift in Sources */,
+				E85B54EA289F97A300362990 /* Shipping.swift in Sources */,
+				E85B54BC289F97A300362990 /* Source.swift in Sources */,
+				E85B549B289F97A300362990 /* AddressFormat.swift in Sources */,
+				E85B54B3289F97A300362990 /* SourceChannel.swift in Sources */,
+				E85B549A289F97A300362990 /* TapNetworkPath.swift in Sources */,
+				E85B54A2289F97A300362990 /* TapCurrencyCode.swift in Sources */,
+				E85B54E8289F97A300362990 /* ExpirationDate.swift in Sources */,
+				E85B54AA289F97A300362990 /* Length.swift in Sources */,
+				E85B54E3289F97A300362990 /* TapCreateTokenWithCardDataRequest.swift in Sources */,
+				E85B5495289F97A300362990 /* AmountMoficiationType.swift in Sources */,
+				E85B54C5289F97A300362990 /* AuthenticationRequirer.swift in Sources */,
+				E85B5494289F97A300362990 /* URLStatus.swift in Sources */,
+				E85B549C289F97A300362990 /* cardType.swift in Sources */,
+				E85B54C8289F97A300362990 /* TapCard.swift in Sources */,
+				E85B54A0289F97A300362990 /* TapAmountedCurrencyFormatter.swift in Sources */,
+				E85B54CC289F97A300362990 /* TokenizedCard.swift in Sources */,
+				E85B54E4289F97A300362990 /* TapEmailAddress.swift in Sources */,
+				E85B54BD289F97A300362990 /* TapMetaData.swift in Sources */,
+				E85B54C3289F97A300362990 /* Permissions.swift in Sources */,
+				E85B54AB289F97A300362990 /* Measurement.swift in Sources */,
+				E85B54BF289F97A300362990 /* QuantityModel.swift in Sources */,
+				E85B54DB289F97A300362990 /* Gateway.swift in Sources */,
+				E85B5412289F977E00362990 /* CommonDataModelsSandbox_Kit.docc in Sources */,
+				E85B54CD289F97A300362990 /* AmountModificatorModel.swift in Sources */,
+				E85B54A3289F97A300362990 /* TapCurrencyLocale.swift in Sources */,
+				E85B5490289F97A300362990 /* SharedCommonDataModels.swift in Sources */,
+				E85B54CB289F97A300362990 /* Country.swift in Sources */,
+				E85B54D7289F97A300362990 /* SDKSettings.swift in Sources */,
+				E85B54C4289F97A300362990 /* ItemModel.swift in Sources */,
+				E85B5498289F97A300362990 /* SourceObject.swift in Sources */,
+				E85B54C0289F97A300362990 /* TransactionExpiry.swift in Sources */,
+				E85B549E289F97A300362990 /* CardKitErrorType.swift in Sources */,
+				E85B54A5289F97A300362990 /* TapPaymentType.swift in Sources */,
+				E85B5491289F97A300362990 /* TapCommonConstants.swift in Sources */,
+				E85B54B1289F97A300362990 /* ElectricCurrent.swift in Sources */,
+				E85B5497289F97A300362990 /* SDKMode.swift in Sources */,
+				E85B549F289F97A300362990 /* CardTypeEnum.swift in Sources */,
+				E85B54B5289F97A300362990 /* TapSDKKnownError.swift in Sources */,
+				E85B549D289F97A300362990 /* CardVerificationStatus.swift in Sources */,
+				E85B54E9289F97A300362990 /* Merchant.swift in Sources */,
+				E85B54A6289F97A300362990 /* TokenType.swift in Sources */,
+				E85B54B4289F97A300362990 /* AddressType.swift in Sources */,
+				E85B54BE289F97A300362990 /* Address.swift in Sources */,
+				E85B54CE289F97A300362990 /* TransactionDetails.swift in Sources */,
+				E85B54B9289F97A300362990 /* RSAUtils.swift in Sources */,
+				E85B54A7289F97A300362990 /* TapCountryCode.swift in Sources */,
+				E85B54DE289F97A300362990 /* TapConfigResponseModel.swift in Sources */,
+				E85B54E0289F97A300362990 /* TapAuthenticationRequest.swift in Sources */,
+				E85B54D8289F97A300362990 /* TapPaymentOption.swift in Sources */,
+				E85B54B6289F97A300362990 /* Crypter.swift in Sources */,
+				E85B5496289F97A300362990 /* SourceType.swift in Sources */,
+				E85B5492289F97A300362990 /* SourcePaymentType.swift in Sources */,
+				E85B54EE289F97A300362990 /* TapSDKErrorType.swift in Sources */,
+				E85B54D9289F97A300362990 /* CardScheme.swift in Sources */,
+				E85B54C6289F97A300362990 /* TapPhone.swift in Sources */,
+				E85B54BA289F97A300362990 /* SourceRequest.swift in Sources */,
+				E85B54C9289F97A300362990 /* CreateTokenCard.swift in Sources */,
+				E85B54D0289F97A300362990 /* TrackingURL.swift in Sources */,
+				E85B54DF289F97A300362990 /* TapCreateCardVerificationRequestModel.swift in Sources */,
+				E85B54AE289F97A300362990 /* Area.swift in Sources */,
+				E85B54AD289F97A300362990 /* Energy.swift in Sources */,
+				E85B548F289F97A300362990 /* TapSDKUnknownError.swift in Sources */,
+				E85B54EC289F97A300362990 /* APIError.swift in Sources */,
+				E85B54A1289F97A300362990 /* String.swift in Sources */,
+				E85B54B8289F97A300362990 /* KeychainManager.swift in Sources */,
+				E85B54E2289F97A300362990 /* TapCreateTokenRequest.swift in Sources */,
+				E85B5499289F97A300362990 /* TransactionMode.swift in Sources */,
+				E85B54DA289F97A300362990 /* TapBinResponseModel.swift in Sources */,
+				E85B54D4289F97A300362990 /* Token.swift in Sources */,
+				E85B54C7289F97A300362990 /* TransactionOrder.swift in Sources */,
+				E85B54C2289F97A300362990 /* InternalSDKSettings.swift in Sources */,
+				E85B54D2289F97A300362990 /* CardFieldsValidity.swift in Sources */,
+				E85B54CF289F97A300362990 /* AuthenticationStatus.swift in Sources */,
+				E85B548E289F97A300362990 /* ErrorDetail.swift in Sources */,
+				E85B54E1289F97A300362990 /* TapCreateCardVerificationResponseModel.swift in Sources */,
+				E85B54AF289F97A300362990 /* Mass.swift in Sources */,
+				E85B54DD289F97A300362990 /* TapConfigRequestModel.swift in Sources */,
+				E85B54DC289F97A300362990 /* Config.swift in Sources */,
+				E85B54E6289F97A300362990 /* Tax.swift in Sources */,
+				E85B54B2289F97A300362990 /* Duration.swift in Sources */,
+				E85B54CA289F97A300362990 /* MerchantModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		E85B5414289F977E00362990 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E85B5415289F977E00362990 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E85B5417289F977E00362990 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 737419F42A85CF208E3202DB /* Pods-CommonDataModelsSandbox-Kit.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = G46S76PUH4;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "tap.company.CommonDataModelsSandbox-Kit";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E85B5418289F977E00362990 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 30188FBB1810C389C463C3A1 /* Pods-CommonDataModelsSandbox-Kit.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = G46S76PUH4;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "tap.company.CommonDataModelsSandbox-Kit";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E85B5407289F977E00362990 /* Build configuration list for PBXProject "CommonDataModelsSandbox-Kit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E85B5414289F977E00362990 /* Debug */,
+				E85B5415289F977E00362990 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E85B5416289F977E00362990 /* Build configuration list for PBXNativeTarget "CommonDataModelsSandbox-Kit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E85B5417289F977E00362990 /* Debug */,
+				E85B5418289F977E00362990 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E85B5404289F977E00362990 /* Project object */;
+}
